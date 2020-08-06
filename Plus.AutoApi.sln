@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plus.AutoApi", "Plus.AutoApi\Plus.AutoApi.csproj", "{5C59A177-97E2-4805-BBF7-10E3BE6E4E00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C59A177-97E2-4805-BBF7-10E3BE6E4E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C59A177-97E2-4805-BBF7-10E3BE6E4E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C59A177-97E2-4805-BBF7-10E3BE6E4E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C59A177-97E2-4805-BBF7-10E3BE6E4E00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E1C9D30-9E8D-4FBB-8F3C-470D4BCAD48F}
+	EndGlobalSection
+EndGlobal
