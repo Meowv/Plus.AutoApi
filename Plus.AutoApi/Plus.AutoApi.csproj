@@ -2,6 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>Plus.AutoApi</PackageId>
+    <Authors>阿星Plus</Authors>
+    <Company>https://meowv.com</Company>
+    <Description>Plus.AutoApi 可以用来动态生成 WebApi 不用写 Controller 的组件</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>https://meowv.com</Copyright>
+    <PackageProjectUrl>https://github.com/Meowv/Plus.AutoApi</PackageProjectUrl>
+    <PackageIconUrl>https://avatars2.githubusercontent.com/u/13010050</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Meowv/Plus.AutoApi</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>plus;autoapi;plus.autoapi;</PackageTags>
+    <PackageReleaseNotes>.NET Core 开发工具包</PackageReleaseNotes>
+    <Version>0.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
