@@ -9,7 +9,7 @@ namespace Plus.AutoApi
     {
         public AutoApiOptions()
         {
-            RemoveControllerSuffixes = new List<string>() { "AppService", "ApplicationService" };
+            RemoveControllerSuffixes = new List<string>() { "ApplicationService", "Service" };
             RemoveActionSuffixes = new List<string>() { "Async" };
             FormBodyBindingIgnoredTypes = new List<Type>() { typeof(IFormFile) };
             DefaultHttpVerb = "POST";
