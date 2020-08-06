@@ -36,7 +36,7 @@ namespace Plus.AutoApi.Sample
                 options.DocInclusionPredicate((docName, description) => true);
             });
 
-            services.AddAutoApi();
+            services.AddAutoApi(x => { });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

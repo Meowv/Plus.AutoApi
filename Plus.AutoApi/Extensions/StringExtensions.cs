@@ -38,17 +38,6 @@ namespace Plus.AutoApi.Extensions
             return str.Substring(0, len);
         }
 
-        public static string Right(this string str, int len)
-        {
-            if (str == null)
-                throw new ArgumentNullException(nameof(str));
-
-            if (str.Length < len)
-                throw new ArgumentException("len argument can not be bigger than given string's length!");
-
-            return str.Substring(str.Length - len, len);
-        }
-
         public static string GetCamelCaseFirstWord(this string str)
         {
             if (str == null)

@@ -28,16 +28,6 @@ namespace Plus.AutoApi.Helpers
             return null;
         }
 
-        public static TAttribute GetSingleAttributeOrDefault<TAttribute>(MemberInfo memberInfo, TAttribute defaultValue = default, bool inherit = true) where TAttribute : Attribute
-        {
-            var attributeType = typeof(TAttribute);
-
-            if (memberInfo.IsDefined(typeof(TAttribute), inherit))
-                return memberInfo.GetCustomAttributes(attributeType, inherit).Cast<TAttribute>().First();
-
-            return defaultValue;
-        }
-
         public static TAttribute GetSingleAttributeOrNull<TAttribute>(this MemberInfo memberInfo, bool inherit = true)
             where TAttribute : Attribute
         {
