@@ -7,6 +7,7 @@
   <ItemGroup>
     <PackageReference Include="Plus.AutoApi" Version="0.1.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.ReDoc" Version="5.5.1" />
   </ItemGroup>
 
 </Project>

@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.ReDoc;
 
 namespace Plus.AutoApi.Sample
 {
@@ -57,10 +58,24 @@ namespace Plus.AutoApi.Sample
                 endpoints.MapControllers();
             });
 
-            app.UseSwagger();
+            app.UseSwagger(c =>
+            {
+                c.RouteTemplate = "api-docs/{documentName}/swagger.json";
+                c.SerializeAsV2 = true;
+            });
+
+            app.UseReDoc(c =>
+            {
+                c.ConfigObject = new ConfigObject
+                {
+                    HideDownloadButton = true,
+                    HideLoading = true
+                };
+            });
+
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Sample WebApi");
+                c.SwaggerEndpoint("/api-docs/v1/swagger.json", "Sample WebApi");
             });
         }
     }
